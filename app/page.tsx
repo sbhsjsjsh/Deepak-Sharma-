@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
 import PropertiesShowcase from '@/components/PropertiesShowcase';
+import RentalShowcase from '@/components/RentalShowcase';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import About from '@/components/About';
-import LocationSection from '@/components/LocationSection';
 
 export default function Home() {
   return (
@@ -10,17 +10,17 @@ export default function Home() {
       {/* 1. Hero Section - Warm radiant header & popular locality pills */}
       <Hero />
 
-      {/* 2. Exclusive Properties Showcase */}
+      {/* 2. Featured Rental Listing (Independent Kothi with Carousel & Commercial Shops) */}
+      <RentalShowcase />
+
+      {/* 3. Exclusive Flats & Apartments Photo Gallery */}
       <PropertiesShowcase />
 
-      {/* 3. Why Choose Deepak Sharma */}
+      {/* 4. Why Choose Deepak Sharma */}
       <WhyChooseUs />
 
-      {/* 4. Consultant Profile & Background */}
+      {/* 5. Consultant Profile & Background */}
       <About />
-
-      {/* 5. Key Noida & Yamuna Expressway Micro-Markets & Map */}
-      <LocationSection />
     </>
   );
 }

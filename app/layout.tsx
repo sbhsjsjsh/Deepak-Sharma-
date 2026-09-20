@@ -1,4 +1,7 @@
 import type {Metadata} from 'next';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingCTA from '@/components/FloatingCTA';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -77,10 +80,6 @@ const jsonLd = {
   ],
   priceRange: '₹₹ - ₹₹₹₹',
 };
-
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import FloatingCTA from '@/components/FloatingCTA';
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (

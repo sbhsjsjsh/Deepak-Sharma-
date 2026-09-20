@@ -3,17 +3,17 @@
 import { AGENT_INFO, getWhatsAppUrl } from '@/lib/constants';
 
 const POPULAR_AREAS = [
+  'Sector 131 Jaypee',
+  'Botanical Garden',
+  'Sector 44-48',
   'Sector 150',
+  'Phase 2 & Bhangel',
   'Yamuna Exp.',
-  'Jewar Airport',
-  'Sector 137',
-  'Pari Chowk',
-  'Central Noida',
 ];
 
 export default function Hero() {
   return (
-    <section id="home" className="relative bg-gradient-to-b from-amber-50/70 via-orange-50/30 to-white py-16 sm:py-24 lg:py-28 overflow-hidden text-center">
+    <section id="home" className="relative bg-gradient-to-b from-amber-50/70 via-orange-50/30 to-white py-14 sm:py-20 lg:py-24 overflow-hidden text-center">
       {/* Subtle radial ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-gradient-to-r from-amber-200/30 via-orange-200/25 to-pink-100/20 blur-3xl pointer-events-none rounded-full" />
 
@@ -28,16 +28,16 @@ export default function Hero() {
 
         {/* Crisp Subtitle */}
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-8 font-normal">
-          Discover premium apartments, authority plots, and independent houses across Noida &amp; Yamuna Expressway&apos;s finest localities.
+          Discover premium apartments, independent kothis, rental residences, and commercial shops across Noida &amp; Yamuna Expressway&apos;s prime localities.
         </p>
 
-        {/* Popular Locations Row - Exactly matching the screenshot */}
+        {/* Popular Locations Row */}
         <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-2 text-xs sm:text-sm">
           <span className="text-slate-400 font-medium">Popular:</span>
           {POPULAR_AREAS.map((area) => (
             <a
               key={area}
-              href={getWhatsAppUrl(`Hi Deepak, I am looking for properties in ${area}. Please share available options.`)}
+              href={getWhatsAppUrl(`Hi Deepak, I am looking for properties/rentals in ${area}. Please share available options.`)}
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-700 hover:text-orange-600 font-medium transition-colors hover:underline underline-offset-4"
